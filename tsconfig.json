@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -18,6 +19,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react"
+  },
+  "baseUrl": "./src",
+  "paths": {
+    "@screens/*": [
+      "screens/*"
+    ],
+    "@components/*": [
+      "components/*"
+    ]
   },
   "include": [
     "src"
